@@ -23,11 +23,13 @@ void handleNotFound()
 void handleLedOn ()
 {
   digitalWrite(LED, HIGH);
+  server.send(200, "text/html; charset=UTF-8", "已開啟LED<br><a href=\"/off\">關閉LED</a>");
 }
 
 void handleLedOff ()
 {
   digitalWrite(LED, LOW);
+  server.send(200, "text/html; charset=UTF-8", "<a href=\"/on\">開啟LED</a><br>已關閉LED");
 }
 
 void setup() {
