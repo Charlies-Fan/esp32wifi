@@ -1,8 +1,8 @@
 #include <Arduino.h>
 #include <WiFi.h>
 
-const char *ssid ="Ron";
-const char *password= "0963083131";
+const char *ssid ="wdawu";
+const char *password= "ls2221wide";
 
 void setup() {
   Serial.begin(115200);
